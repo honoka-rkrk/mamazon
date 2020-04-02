@@ -60,6 +60,7 @@
                     <a class="brand" href="index.html"><img
                             src="{% static "themes/images/mamazon.png" %}" alt="Mamazon" /></a>
                     <form class="form-inline navbar-search" method="post" action="products.html">
+                        {% csrf_token %}
                         <input id="srchFld" class="srchTxt" type="text" />
                         <select class="srchTxt">
                             <option>All</option>
